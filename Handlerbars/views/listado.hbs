@@ -1,0 +1,27 @@
+{{> nav}}
+
+<div>
+{{#each productos}}
+<div class="card">
+  <h3>{{title}}</h3>
+  <p>Precio: {{price}}</p>
+  <img src="{{thumbnail}}">
+  <form action="/productos/eliminar/{{id}}" method="post">
+    <input type="submit" value="Eliminar">
+  </form>
+</div>
+{{/each}}
+</div>{{> nav}}
+
+<div>
+{{#each productos}}
+<div class="card">
+  <h3>{{title}}</h3>
+  <p>Precio: {{price}}</p>
+  <img src="{{thumbnail}}">
+  <form action="/productos/eliminar/{{id}}" method="post">
+    <input type="submit" value="Eliminar">
+  </form>
+</div>
+{{/each}}
+</div>
